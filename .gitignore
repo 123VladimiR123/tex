@@ -1,0 +1,6 @@
+example/
+*.log
+*.fls
+*.aux
+*.gz
+*.fdb_latexmk

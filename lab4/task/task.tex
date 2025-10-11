@@ -1,0 +1,70 @@
+\documentclass{article}
+
+\usepackage[utf8]{inputenc}  
+\usepackage[T2A]{fontenc}     
+\usepackage[russian]{babel} 
+\usepackage{graphicx}
+\usepackage{multicol}
+\usepackage[hidelinks]{hyperref}
+\usepackage{lipsum} 
+\graphicspath{{img/}}
+
+\begin{document}
+Pic height~\ref{sec:biba}
+\begin{center}
+\includegraphics[height = 0.5\textheight]{image.png}
+\end{center}
+\section{ABABABA}
+\label{sec:biba}
+\section{At the world starts}
+
+\pagebreak
+
+
+\begin{center}
+\includegraphics[width = 0.5\linewidth]{image.png}
+\end{center}
+
+\pagebreak
+
+Pic scale
+\begin{center}
+\includegraphics[scale = 0.2]{image.png}
+\end{center}
+
+\pagebreak
+
+Pic angle
+\begin{center}
+\includegraphics[angle = 90, scale = 0.5]{image.png}
+\end{center}
+
+\pagebreak
+
+Two column option
+\begin{multicols}{2}
+\includegraphics[height = 0.2\linewidth]{image.png}
+\includegraphics[height = 0.2\textheight]{image.png}
+\end{multicols}
+
+\pagebreak
+\lipsum[1-4]
+\begin{figure}[ht]
+\begin{center}
+\label{figure:image}
+\includegraphics[height = 0.5\textheight]{image.png}    
+\caption{An example image}
+\end{center}
+\end{figure}
+
+\lipsum[5-15]
+link~\ref{figure:image}
+
+\begin{equation}
+e^{i\pi}+1 = 0
+\label{eq:labeltwo}
+\end{equation}
+
+link~\ref{eq:labeltwo}
+
+\end{document}

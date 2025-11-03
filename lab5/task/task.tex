@@ -1,0 +1,66 @@
+\documentclass{article}
+
+\usepackage[utf8]{inputenc}  
+\usepackage[T2A]{fontenc}     
+\usepackage[russian]{babel} 
+\usepackage{array}
+
+\begin{document}
+
+\begin{tabular}{l|l|l}
+AnimalAnimalAnimal & FoodFoodFoodFoodFood & SizeSizeSizeSizeSize \\[2pt]
+dogdogdogdogdogdogdog & meatmeatmeatmeatmea& mediummediummediummed\\
+horsehorsehorsehorsehorsehorsehorse & hayhayhayhayhay & largelargelarg\\
+frogfrogfrogfrog & fliesfliesfliesfliesfliesflie& smallsmallsmallsmallsmall \\
+\end{tabular}
+
+\paragraph{}
+
+\begin{tabular}{c|c|c}
+AnimalAnimalAnimal & FoodFoodFoodFoodFood & SizeSizeSizeSizeSize \\[2pt]
+dogdogdogdogdogdogdog & meatmeatmeatmeatmea& mediummediummediummed\\
+horsehorsehorsehorsehorsehorsehorse & hayhayhayhayhay & largelargelarg\\
+frogfrogfrogfrog & fliesfliesfliesfliesfliesflie& smallsmallsmallsmallsmall \\
+\end{tabular}
+
+\paragraph{}
+
+\begin{tabular}{r|r|r}
+AnimalAnimalAnimal & FoodFoodFoodFoodFood & SizeSizeSizeSizeSize \\[2pt]
+dogdogdogdogdogdogdog & meatmeatmeatmeatmea& mediummediummediummed\\
+horsehorsehorsehorsehorsehorsehorse & hayhayhayhayhay & largelargelarg\\
+frogfrogfrogfrog & fliesfliesfliesfliesfliesflie& smallsmallsmallsmallsmall \\
+\end{tabular}
+
+\paragraph{}
+
+\begin{tabular}{lll}
+Animal & Food \\
+dog & meat & medium \\
+horse & hay & large \\
+frog & flies & small \\
+\end{tabular}
+
+\paragraph{}
+
+\begin{tabular}{ll|l|}
+Animal & Food & Size \\
+dog & meat \\
+horse & hay & large \\
+frog & flies  \\
+\end{tabular}
+
+\paragraph{}
+
+\begin{tabular}{|l|l|l|}
+\multicolumn{2}{l}{Props} & Size \\
+\hline
+dog & meat & medium \\
+horse & hay & large \\
+\hline
+\multicolumn{3}{c}{unknown} \\
+\hline
+\end{tabular}
+
+
+\end{document}
